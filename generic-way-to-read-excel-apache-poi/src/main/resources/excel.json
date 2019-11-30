@@ -1,0 +1,75 @@
+[
+	{
+		"Order":
+		[
+			{
+				"excelHeader": "Order Date",
+				"excelIndex": 0,
+				"excelColType": "Date",
+				"excelValue": null,
+				"pojoAttribute": "orderDate"
+			},
+			{
+				"excelHeader": "Region",
+				"excelIndex": 1,
+				"excelColType": "String",
+				"excelValue": null,
+				"pojoAttribute": "region"
+			},
+			{
+				"excelHeader": "Rep",
+				"excelIndex": 2,
+				"excelColType": "String",
+				"excelValue": null,
+				"pojoAttribute": "rep"
+			},
+			{
+				"excelHeader": "Item",
+				"excelIndex": 3,
+				"excelColType": "String",
+				"excelValue": null,
+				"pojoAttribute": "item"
+			},
+			{
+				"excelHeader": "Units",
+				"excelIndex": 4,
+				"excelColType": "Integer",
+				"excelValue": null,
+				"pojoAttribute": "units"
+			},
+			{
+				"excelHeader": "Unit Cost",
+				"excelIndex": 5,
+				"excelColType": "Double",
+				"excelValue": null,
+				"pojoAttribute": "unitCost"
+			},
+			{
+				"excelHeader": "Total",
+				"excelIndex": 5,
+				"excelColType": "Double",
+				"excelValue": null,
+				"pojoAttribute": "total"
+			}
+		]
+	},
+	{
+		"Profit":
+		[
+			{
+				"excelHeader": "Date",
+				"excelIndex": 8,
+				"excelColType": "Date",
+				"excelValue": null,
+				"pojoAttribute": "date"
+			},
+			{
+				"excelHeader": "Profit",
+				"excelIndex": 9,
+				"excelColType": "Double",
+				"excelValue": null,
+				"pojoAttribute": "profit"
+			}
+		]
+	}
+]
