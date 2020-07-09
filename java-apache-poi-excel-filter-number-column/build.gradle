@@ -1,0 +1,18 @@
+plugins {
+    id 'java-library'
+}
+
+sourceCompatibility = 12
+targetCompatibility = 12
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    implementation 'org.apache.poi:poi-ooxml:4.1.2'
+    implementation 'org.apache.poi:ooxml-schemas:1.4'
+    
+    //required only for jdk 9 or above
+    implementation('com.fasterxml.jackson.core:jackson-databind:2.10.1')
+}
