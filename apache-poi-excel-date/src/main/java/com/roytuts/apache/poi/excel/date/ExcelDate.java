@@ -3,6 +3,7 @@ package com.roytuts.apache.poi.excel.date;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Calendar;
 import java.util.Date;
@@ -19,7 +20,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class ExcelDate {
 
 	public static void main(String[] args) {
-		final String fileName = "excel-date.xlsx";//"excel-date.xls";
+		final String fileName = "excel-date.xlsx";// "excel-date.xls";
 		createExcel(fileName);
 	}
 
@@ -77,6 +78,12 @@ public class ExcelDate {
 		cell = row.createCell(3);
 		cell.setCellValue(LocalDateTime.now());
 		cell.setCellStyle(cellStyle3);
+
+		CellStyle cellStyle4 = workbook.createCellStyle();
+		cellStyle4.setDataFormat(createHelper.createDataFormat().getFormat("MMM/dd/yyyy"));
+		cell = row.createCell(4);
+		cell.setCellValue(LocalDate.now());
+		cell.setCellStyle(cellStyle4);
 
 		FileOutputStream fileOut = null;
 		try {
